@@ -48,6 +48,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="20dp"
             android:id="@+id/img"
+            android:scaleType="fitXY"
             android:layout_gravity="center"/>
     </LinearLayout>
     <Button

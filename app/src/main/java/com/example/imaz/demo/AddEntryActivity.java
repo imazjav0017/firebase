@@ -110,7 +110,7 @@ public class AddEntryActivity extends AppCompatActivity {
                                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
                                                     if (ds.getKey().equals(sId)) {
-                                                        DatabaseReference updateRef = ref.child("Shoes").child(ds.getKey()).child("ImageUrl");
+                                                        DatabaseReference updateRef = ref.child("Shoes").child(ds.getKey()).child("imageUrl");
                                                         updateRef.setValue(uri.toString());
 
                                                     }
